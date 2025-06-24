@@ -36,16 +36,29 @@ pipeline {
                 bat 'dotnet publish -c Release -o ./publish'
             }
         }
+        stage('Check .NET SDK') {
+    steps {
+        bat 'dotnet --version'
+        bat 'dotnet --list-sdks'
+    }
+}
 
-        stage('Copy to IIS folder') {
-            steps {
-                echo 'Copying to IIS root folder...'
-                // Stop IIS to safely overwrite files
-                bat 'iisreset /stop'
-                bat 'xcopy "%WORKSPACE%\\publish" "C:\\inetpub\\wwwroot\\TrienKhaiPhamMem4" /E /Y /I /R'
-                bat 'iisreset /start'
-            }
-        }
+       stage('Copy to IIS folder') {
+    steps {
+        echo 'Copying to IIS root folder...'
+        bat 'iisreset /stop'
+        bat '''
+        if exist "%WORKSPACE%\\publish" (
+            xcopy "%WORKSPACE%\\publish" "C:\\inetpub\\wwwroot\\TrienKhaiPhamMem4" /E /Y /I /R
+        ) else (
+            echo "Publish folder not found!"
+            exit /b 1
+        )
+        '''
+        bat 'iisreset /start'
+    }
+}
+
 
         stage('Deploy to IIS') {
             steps {
