@@ -8,7 +8,7 @@ open System.Reflection
 
 
 [<assembly: System.Reflection.AssemblyCompanyAttribute("TrienKhaiPhanMem4")>]
-[<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
+[<assembly: System.Reflection.AssemblyConfigurationAttribute("Release")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
 [<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+443107091fb632db92562b3a2e98541b16c585af")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("TrienKhaiPhanMem4")>]
