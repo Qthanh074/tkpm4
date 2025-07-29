@@ -1,4 +1,4 @@
-namespace TrienKhaiPhanMem4
+﻿namespace TrienKhaiPhanMem4
 
 #nowarn "20"
 
@@ -29,6 +29,7 @@ module Program =
             .AddRazorRuntimeCompilation()
 
         builder.Services.AddRazorPages()
+        builder.WebHost.UseUrls("http://0.0.0.0:80"); // Đảm bảo dòng này có mặt khi đóng dockers
 
         let app = builder.Build()
 

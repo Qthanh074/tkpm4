@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("TrienKhaiPhanMem4")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+443107091fb632db92562b3a2e98541b16c585af")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f1cc2b73f25d244600dba7b5f7420df81325d70")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("TrienKhaiPhanMem4")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("TrienKhaiPhanMem4")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]

@@ -5,6 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include=".dockerignore" />
+    <None Include="Dockerfile" />
     <None Include=".gitattributes" />
     <None Include="Jenkinsfile" />
     <None Include=".gitignore" />
