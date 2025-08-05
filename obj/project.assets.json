@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "FSharp.Core/8.0.301": {
+      "FSharp.Core/9.0.300": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/FSharp.Core.dll": {
@@ -346,15 +346,15 @@
     }
   },
   "libraries": {
-    "FSharp.Core/8.0.301": {
-      "sha512": "I94+2zfAhWMJwPzVDFSlsutZvjPkaRvLVipf8b2O4AyzxKUBmevDkUBzcJBqSQNB1Ikig8xdphswoeKrObqx7Q==",
+    "FSharp.Core/9.0.300": {
+      "sha512": "2ZDoF/N7WPidmaflrTnPucUJfaV5XkIHCh4h77yET7ihuv2dR2ksSsIiiDd34Z9YmwyYEQocpDl1r6RXFr0DMg==",
       "type": "package",
-      "path": "fsharp.core/8.0.301",
+      "path": "fsharp.core/9.0.300",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "fsharp.core.8.0.301.nupkg.sha512",
+        "fsharp.core.9.0.300.nupkg.sha512",
         "fsharp.core.nuspec",
         "lib/netstandard2.0/FSharp.Core.dll",
         "lib/netstandard2.0/FSharp.Core.xml",
@@ -874,12 +874,13 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "FSharp.Core >= 8.0.301",
+      "FSharp.Core >= 9.0.300",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 8.0.17"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\daoqu\\.nuget\\packages\\": {}
+    "C:\\Users\\daoqu\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -890,8 +891,12 @@
       "packagesPath": "C:\\Users\\daoqu\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\daoqu\\Downloads\\TrienKhaiPhanMem4\\TrienKhaiPhanMem4\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\daoqu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -899,8 +904,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Program Files\\dotnet\\sdk\\8.0.303\\FSharp\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\9.0.302\\FSharp\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -913,7 +917,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -922,7 +927,7 @@
           "FSharp.Core": {
             "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
             "target": "Package",
-            "version": "[8.0.301, )",
+            "version": "[9.0.300, )",
             "generatePathProperty": true
           },
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
@@ -950,7 +955,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
